@@ -274,8 +274,14 @@ body{
         color: #434455;
 }
 .portfolio-photos {
-    width: calc((100%-48px)/3);
+    width: calc((100% - 48px) / 3);
     height: 420px;
+}
+.portfolio-item-description{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
 }
 /* ========Footer styles======== */
 .page-footer{
