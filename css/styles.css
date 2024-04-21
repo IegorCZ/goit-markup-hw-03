@@ -39,6 +39,19 @@ body{
     padding-top: 120px;
     padding-bottom: 120px;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 /* ========Header styles======== */
 .page-header{
     border-bottom: 1px solid #E7E9FC;
@@ -130,12 +143,13 @@ body{
 }
 .order-service{
     min-width: 169px;
-    height: 56px;
-    padding: 16px 32px;
-    border-radius: 4px;
-    border: none;
-    font-family: "Roboto", sans-serif;
-    font-family: inherit;
+        height: 56px;
+        padding: 16px 32px;
+        margin: 0 auto;
+        border-radius: 4px;
+        border: none;
+        font-family: "Roboto", sans-serif;
+        font-family: inherit;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -148,14 +162,20 @@ body{
     background-color: #404BBF
 }
 /* ========Benefits styles======== */
-.benefit-list{
+.benefits{
+    padding-top: 109px;
+    padding-bottom: 120px;
+}
+.benefits-list{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: stretch;
+    gap: 24px;
 }
 
 .benefits-list-title{
+    width: calc((100% - 3 * 24px) / 4);
     font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
@@ -238,6 +258,8 @@ body{
 .porfolio-list-overall{
     display: flex;
     column-gap: 24px;
+    row-gap: 48px;
+    flex-wrap: wrap;
 }
 .portfolio-photos {
     width: calc((100%-48px)/3);
@@ -245,7 +267,9 @@ body{
 }
 /* ========Footer styles======== */
 .page-footer{
-    background-color: #2e2f42;;
+    background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .footer-logo{
     font-family: "Raleway", sans-serif;
@@ -256,6 +280,8 @@ body{
         color: #4d5ae5;
         line-height: 1.17;
         text-transform: uppercase;
+        margin-bottom: 16px;
+        display: inline-block;
 }
 .footer-text{
     font-family: "Roboto", sans-serif;
@@ -264,6 +290,7 @@ body{
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
+        max-width: 264px;
 }
 .color-studio{
    color: #f4f4fd
