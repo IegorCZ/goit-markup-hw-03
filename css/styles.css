@@ -206,7 +206,7 @@ body{
 .team-background-photos{
     display: flex;
     column-gap: 24px;
-
+}
 /* ========Potrfolio styles======== */
 .portfolio-title{
     font-weight: 700;
@@ -238,7 +238,6 @@ body{
 .porfolio-list-overall{
     display: flex;
     column-gap: 24px;
-}
 }
 .portfolio-photos {
     width: calc((100%-48px)/3);
