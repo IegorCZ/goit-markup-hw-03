@@ -239,6 +239,13 @@ body{
     padding: 32px 0;
 }
 /* ========Potrfolio styles======== */
+
+.portfolio-list-list{
+    display: flex;
+    column-gap: 24px;
+    row-gap: 48px;
+    flex-wrap: wrap;
+}
 .portfolio-title{
     font-weight: 700;
         font-size: 36px;
@@ -265,12 +272,6 @@ body{
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #434455;
-}
-.porfolio-list-overall{
-    display: flex;
-    column-gap: 24px;
-    row-gap: 48px;
-    flex-wrap: wrap;
 }
 .portfolio-photos {
     width: calc((100%-48px)/3);
